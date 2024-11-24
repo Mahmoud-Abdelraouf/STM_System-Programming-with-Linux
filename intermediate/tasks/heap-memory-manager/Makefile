@@ -65,7 +65,7 @@ bin/%_static.o: src/%.c $(HDR)
 
 # Clean target
 clean_all:
-	$(RM) bin/* lib/*
+	$(RM) -rf bin/* lib/* docs/doxygen_output/*
 
 # Clean object files
 clean_obj:
@@ -73,5 +73,5 @@ clean_obj:
 
 # Generate documentation
 doc:
-	doxygen docs/Doxyfile
+	doxygen Doxyfile
 
