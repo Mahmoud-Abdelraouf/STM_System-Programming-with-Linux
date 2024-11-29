@@ -28,3 +28,5 @@
 .DS_Store
 Thumbs.db
 
+# Ignore the tools.tar.xz
+tools.tar.xz
