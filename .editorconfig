@@ -35,3 +35,9 @@ trim_trailing_whitespace = false
 [*.log]
 insert_final_newline = false
 trim_trailing_whitespace = false
+
+# Makefile-specific settings
+[Makefile]
+indent_style = tab
+indent_size = 8
+trim_trailing_whitespace = false
