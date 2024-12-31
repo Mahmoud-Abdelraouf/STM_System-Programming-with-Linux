@@ -1,0 +1,55 @@
+# .editorconfig file
+# More info: https://editorconfig.org/
+
+root = true
+
+[*]
+# Indentation (4 spaces, no tabs)
+indent_style = space
+indent_size = 4
+tab_width = 4
+
+# Line endings (Unix-style)
+end_of_line = lf
+
+# Character encoding
+charset = utf-8
+
+# Trim trailing whitespace
+trim_trailing_whitespace = true
+
+# Insert a final newline at the end of files
+insert_final_newline = true
+
+# Set maximum line length (optional)
+max_line_length = 100
+
+# Matches Python files
+[*.py]
+# Use 4 spaces for Python
+indent_style = space
+indent_size = 4
+
+# Matches Markdown files
+[*.md]
+# Wrap text at 80 characters for better readability
+max_line_length = 80
+trim_trailing_whitespace = false
+
+# Matches JSON files
+[*.json]
+indent_style = space
+indent_size = 2
+
+# Matches Makefiles (tabs required)
+[Makefile]
+indent_style = tab
+
+# Matches YAML files
+[*.yml]
+indent_style = space
+indent_size = 2
+
+# Ignore all binary files
+[*.{png,jpg,jpeg,gif,ico,ttf,woff,woff2,eot}]
+charset = binary
