@@ -1,0 +1,78 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+ENV/
+env/
+*.env
+.venv/
+.ENV/
+
+# System Files (MacOS, Windows, Linux)
+.DS_Store
+Thumbs.db
+*.bak
+*.swp
+*.swo
+*.swn
+
+# Python Cache
+*.egg
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# Logs and Debugging
+*.log
+debug.log
+error.log
+
+# Python packaging
+*.tar.gz
+*.whl
+*.zip
+dist/
+build/
+*.egg-info/
+
+# Test Results
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+*.pycover
+*.hypothesis/
+
+# Editor / IDE Configurations
+.idea/
+.vscode/
+*.iml
+
+# ffmpeg output files (optional)
+*.mp4
+*.mkv
+*.webm
+*.mp3
+*.wav
+*.avi
+
+# Miscellaneous
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+
+# Hidden files
+*.~*
+
+# Local environment configurations
+.env
+*.local
+.envrc
