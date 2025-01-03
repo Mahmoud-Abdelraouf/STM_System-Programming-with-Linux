@@ -4,9 +4,12 @@
 VENV_DIR = venv
 PYTHON = python3
 PIP = $(VENV_DIR)/bin/pip
-ACTIVATE = source $(VENV_DIR)/bin/activate
+PYTHON_BIN = $(VENV_DIR)/bin/python
 REQUIREMENTS = requirements.txt
 APP = app.py
+
+# Declare phony targets
+.PHONY: all venv install check_ffmpeg run clean help
 
 # Default target
 all: run
@@ -34,7 +37,7 @@ check_ffmpeg:
 # Run the application
 run: install check_ffmpeg
 	@echo "Running the application..."
-	$(VENV_DIR)/bin/python $(APP)
+	$(PYTHON_BIN) $(APP)
 
 # Clean the project
 clean:
@@ -44,9 +47,9 @@ clean:
 # Help message
 help:
 	@echo "Available targets:"
-	@echo "  venv      - Create a virtual environment"
-	@echo "  install   - Install Python dependencies"
+	@echo "  venv         - Create a virtual environment"
+	@echo "  install      - Install Python dependencies"
 	@echo "  check_ffmpeg - Check if ffmpeg is installed"
-	@echo "  run       - Run the application"
-	@echo "  clean     - Remove the virtual environment"
-	@echo "  help      - Show this help message"
+	@echo "  run          - Run the application"
+	@echo "  clean        - Remove the virtual environment"
+	@echo "  help         - Show this help message"
