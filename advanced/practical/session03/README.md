@@ -1,4 +1,4 @@
-# Session 03: Working with Yocto - System Programming under Linux
+# Session 03: Working with Yocto
 
 ## Overview
 
