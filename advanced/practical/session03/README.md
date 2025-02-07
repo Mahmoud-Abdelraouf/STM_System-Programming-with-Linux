@@ -48,7 +48,7 @@ sudo apt-get install gawk wget git-core diffstat unzip texinfo gcc-multilib \
 
    ```sh
    cd poky
-   source oe-init-build-env ../build-qemuarm64
+   source oe-init-build-env ../build-qemux86-64
    ```
 
 ---
